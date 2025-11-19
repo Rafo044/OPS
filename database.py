@@ -3,6 +3,7 @@
 import os
 
 from dotenv import load_dotenv
+from loguru import logger
 from psycopg2 import connect
 
 load_dotenv()
@@ -18,6 +19,10 @@ def connection():
             port=os.getenv("POSTGRES_PORT"),
         )
         return connection_
+        logger.success("Connected to the database")
     except Exception as e:
-        print(f"Error connecting to the database: {e}")
-        return None
+        logger.error(f"Error connecting to the database: {e}")
+        return e
+
+
+connection()
