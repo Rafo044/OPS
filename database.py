@@ -4,25 +4,23 @@ import os
 
 from dotenv import load_dotenv
 from loguru import logger
-from psycopg2 import connect
+from tortoise import Tortoise
 
 load_dotenv()
 
 
-def connection():
+async def connection():
     try:
-        connection_ = connect(
-            host=os.getenv("HOST"),
-            database=os.getenv("POSTGRES_DATABASE"),
-            user=os.getenv("POSTGRES_USER"),
-            password=os.getenv("POSTGRES_PASSWORD"),
-            port=os.getenv("POSTGRES_PORT"),
+        await Tortoise.init(
+            db_url=f"postgres://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@{os.getenv('POSTGRES_HOST')}:{os.getenv('POSTGRES_PORT')}/{os.getenv('POSTGRES_DB')}",
+            modules={"models": ["user"]},
         )
-        return connection_
-        logger.success("Connected to the database")
+        await Tortoise.generate_schemas()
+        logger.info("Baglantı ugurla reallaşdı!")
     except Exception as e:
-        logger.error(f"Error connecting to the database: {e}")
-        return e
+        logger.error(f"Baglantı zamanı xəta baş verdi: {e}")
+        raise
 
 
-connection()
+async def close_db():
+    await Tortoise.close_connections()

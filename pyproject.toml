@@ -7,9 +7,10 @@ requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.121.2",
     "loguru>=0.7.3",
-    "psycopg2-binary>=2.9.11",
     "pydantic>=2.12.4",
+    "pylint>=4.0.3",
     "python-dotenv>=1.2.1",
     "ruff>=0.14.5",
+    "tortoise-orm[asyncpg]>=0.25.1",
     "uvicorn>=0.38.0",
 ]

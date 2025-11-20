@@ -1,0 +1,45 @@
+2025-11-19 21:13:44.187 | ERROR    | database:connection:21 - Failed to connect to database: [Errno -2] Name or service not known
+2025-11-19 21:13:44.188 | ERROR    | main:create_connection:21 - Connection error: [Errno -2] Name or service not known
+2025-11-19 21:18:04.432 | ERROR    | database:connection:21 - Failed to connect to database: [Errno -2] Name or service not known
+2025-11-19 21:18:04.432 | ERROR    | main:create_connection:21 - Connection error: [Errno -2] Name or service not known
+2025-11-19 21:21:29.243 | ERROR    | database:connection:21 - Failed to connect to database: Can't establish connection to database None
+2025-11-19 21:21:29.243 | ERROR    | main:create_connection:21 - Connection error: Can't establish connection to database None
+2025-11-19 21:22:11.403 | ERROR    | database:connection:21 - Failed to connect to database: [Errno -3] Temporary failure in name resolution
+2025-11-19 21:22:11.403 | ERROR    | main:create_connection:21 - Connection error: [Errno -3] Temporary failure in name resolution
+2025-11-19 21:22:32.837 | ERROR    | database:connection:21 - Failed to connect to database: Can't establish connection to database None
+2025-11-19 21:22:32.837 | ERROR    | main:create_connection:21 - Connection error: Can't establish connection to database None
+2025-11-19 21:23:15.687 | ERROR    | database:connection:21 - Failed to connect to database: [Errno -3] Temporary failure in name resolution
+2025-11-19 21:23:15.687 | ERROR    | main:create_connection:21 - Connection error: [Errno -3] Temporary failure in name resolution
+2025-11-19 21:23:42.779 | ERROR    | database:connection:21 - Failed to connect to database: Can't establish connection to database None
+2025-11-19 21:23:42.779 | ERROR    | main:create_connection:21 - Connection error: Can't establish connection to database None
+2025-11-19 21:25:30.473 | ERROR    | database:connection:21 - Failed to connect to database: Can't establish connection to database None
+2025-11-19 21:25:30.473 | ERROR    | main:create_connection:21 - Connection error: Can't establish connection to database None
+2025-11-19 21:27:49.776 | ERROR    | database:connection:21 - Failed to connect to database: Can't establish connection to database None
+2025-11-19 21:27:49.776 | ERROR    | main:create_connection:21 - Connection error: Can't establish connection to database None
+2025-11-19 21:29:09.164 | INFO     | database:connection:19 - Connection hazırdır!
+2025-11-19 21:29:09.164 | INFO     | main:create_connection:19 - Database connection established.
+2025-11-19 21:29:50.125 | INFO     | database:connection:19 - Connection hazırdır!
+2025-11-19 21:29:50.125 | INFO     | main:create_connection:19 - Database connection established.
+2025-11-19 21:30:15.158 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 21:30:15.158 | INFO     | main:create_connection:19 - Database connection established.
+2025-11-19 21:30:33.922 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 21:41:14.117 | ERROR    | database:connection:21 - Baglantı zamanı xəta baş verdi: Module "OPS.CoreService.user" not found
+2025-11-19 21:41:14.118 | ERROR    | main:create_connection:20 - Connection error: Module "OPS.CoreService.user" not found
+2025-11-19 21:42:34.288 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 21:50:06.669 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 21:50:57.514 | ERROR    | main:get_user:28 - Xəta baş verdi: 'str' object has no attribute 'executor_class'
+2025-11-19 21:51:06.724 | ERROR    | main:get_user:28 - Xəta baş verdi: 'str' object has no attribute 'executor_class'
+2025-11-19 22:00:25.074 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:00:46.020 | ERROR    | main:get_user:28 - Xəta baş verdi: 'str' object has no attribute 'executor_class'
+2025-11-19 22:31:57.461 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:36:47.166 | ERROR    | main:create_user:31 - Xəta baş verdi: tortoise.models.Model.create() argument after ** must be a mapping, not UserValidator
+2025-11-19 22:37:56.149 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:38:26.020 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:38:33.329 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:38:37.983 | ERROR    | main:create_user:31 - Xəta baş verdi: tortoise.models.Model.create() argument after ** must be a mapping, not UserValidator
+2025-11-19 22:38:57.769 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:39:02.485 | ERROR    | main:create_user:31 - Xəta baş verdi: 'UserValidator' object has no attribute 'executor_class'
+2025-11-19 22:39:44.674 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:39:47.720 | ERROR    | main:create_user:31 - Xəta baş verdi: 'dict' object has no attribute 'executor_class'
+2025-11-19 22:41:50.654 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!
+2025-11-19 22:42:24.585 | INFO     | database:connection:19 - Baglantı ugurla reallaşdı!

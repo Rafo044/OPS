@@ -1,17 +1,7 @@
-from pydantic import BaseModel
+from tortoise import Tortoise, fields, models
 
 
-class User(BaseModel):
-    id: int
-    name: str
-    email: str
-    user_list: list
-
-    def get_user_list(self):
-        return self.user_list
-
-    def add_user(self, user):
-        self.user_list.append(user)
-
-    def remove_user(self, user):
-        self.user_list.remove(user)
+class User(models.Model):
+    id = fields.IntField(pk=True)
+    name = fields.CharField(max_length=100)
+    email = fields.CharField(max_length=100)
